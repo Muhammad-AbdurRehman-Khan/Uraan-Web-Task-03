@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Red Card 2018 - Application Submission Portal. Submit your nomination for China Digital Football Awards.">
+    <title>Red Card 2018 - Screen 1: Submission</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Specific screen1 standalone adjustments */
+        body {
+            background-color: #f0f2f5;
+        }
+        .screen-wrapper {
+            max-width: 980px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <nav class="global-nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="index.html" style="display:flex; align-items:center; gap:10px;">
+                    <img src="images/logo.png" alt="Red Card Logo" class="nav-logo">
+                    <div>
+                        <div class="nav-title">RED CARD 2018</div>
+                        <div class="nav-tagline">China Digital Football Awards</div>
+                    </div>
+                </a>
+            </div>
+            <div class="nav-screen-tabs">
+                <a href="screen1.html" class="nav-tab-btn active">
+                    <span>📝 Screen 1: Submission Form</span>
+                </a>
+                <a href="screen2.html" class="nav-tab-btn">
+                    <span>🏆 Screen 2: Awards & Report</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Standalone Viewport for Screen 1 -->
+    <main class="app-viewport">
+        <div class="screen-wrapper">
+            <section id="screen-1-view">
+                
+                <!-- White Header with Logo -->
+                <header class="submission-header">
+                    <div class="submission-logo-wrapper">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="Red Card Logo" class="submission-brand-logo">
+                        </a>
+                    </div>
+                </header>
+
+                <!-- Main Maroon Submission Card with Slanted Cut -->
+                <div class="submission-main-card">
+                    <div class="submission-grid">
+                        
+                        <!-- Left Column: Title, Explanatory Copy & Closing Date -->
+                        <div class="submission-info-col">
+                            <h1 class="submission-title">Submission</h1>
+                            
+                            <p class="submission-desc">
+                                All details of submissions will be kept strictly private and
+                                confidential by Mailman and will not be used for any purpose
+                                other than judging Red Card 2018 winners.
+                            </p>
+
+                            <div class="submission-deadline-box">
+                                <div class="deadline-text">
+                                    <span>Applications will close on the</span>
+                                    <span>15th December 2017</span>
+                                </div>
+                                <!-- Floating white accent square dots -->
+                                <div class="accent-square accent-square-1" aria-hidden="true"></div>
+                                <div class="accent-square accent-square-2" aria-hidden="true"></div>
+                            </div>
+                        </div>
+
+                        <!-- Right Column: Submission Form -->
+                        <div class="submission-form-col">
+                            <form id="award-submission-form" class="submission-form" action="#" method="POST">
+                                
+                                <div class="form-group-input">
+                                    <input type="text" id="applicant-name" name="name" class="form-input-bordered" placeholder="Name" required autocomplete="name">
+                                </div>
+
+                                <div class="form-group-input">
+                                    <input type="email" id="applicant-email" name="email" class="form-input-bordered" placeholder="Email Address" required autocomplete="email">
+                                </div>
+
+                                <div class="form-group-input">
+                                    <input type="text" id="applicant-organisation" name="organisation" class="form-input-bordered" placeholder="Organisation" required autocomplete="organization">
+                                </div>
+
+                                <!-- Award Selection Heading -->
+                                <div class="form-section-awards">
+                                    <h2 class="awards-header-title">Which Award</h2>
+                                    <p class="awards-header-subtitle">
+                                        (Please tick and provide details for all of the awards you would like to be nominated for)
+                                    </p>
+                                </div>
+
+                                <!-- Award 1: Best Livestream (Checked in screen1.png) -->
+                                <div class="award-field-block">
+                                    <label class="award-checkbox-row" for="award-livestream">
+                                        <span class="award-checkbox-label">
+                                            <span class="custom-checkbox-wrapper">
+                                                <input type="checkbox" id="award-livestream" name="awards[]" value="Best Livestream" checked>
+                                                <span class="custom-checkbox-box"></span>
+                                            </span>
+                                            <span>Best Livestream</span>
+                                        </span>
+                                        <span class="award-row-square" aria-hidden="true"></span>
+                                    </label>
+                                    <textarea id="desc-livestream" name="desc_livestream" class="award-textarea" placeholder="Description & Results (max. 150 words)"></textarea>
+                                </div>
+
+                                <!-- Award 2: Best Tour Campaign -->
+                                <div class="award-field-block">
+                                    <label class="award-checkbox-row" for="award-tour">
+                                        <span class="award-checkbox-label">
+                                            <span class="custom-checkbox-wrapper">
+                                                <input type="checkbox" id="award-tour" name="awards[]" value="Best Tour Campaign">
+                                                <span class="custom-checkbox-box"></span>
+                                            </span>
+                                            <span>Best Tour Campaign</span>
+                                        </span>
+                                        <span class="award-row-square" aria-hidden="true"></span>
+                                    </label>
+                                    <textarea id="desc-tour" name="desc_tour" class="award-textarea" placeholder="Description & Results (max. 150 words)"></textarea>
+                                </div>
+
+                                <!-- Award 3: Best Sponsor Activation -->
+                                <div class="award-field-block">
+                                    <label class="award-checkbox-row" for="award-sponsor">
+                                        <span class="award-checkbox-label">
+                                            <span class="custom-checkbox-wrapper">
+                                                <input type="checkbox" id="award-sponsor" name="awards[]" value="Best Sponsor Activation">
+                                                <span class="custom-checkbox-box"></span>
+                                            </span>
+                                            <span>Best Sponsor Activation</span>
+                                        </span>
+                                        <span class="award-row-square" aria-hidden="true"></span>
+                                    </label>
+                                    <textarea id="desc-sponsor" name="desc_sponsor" class="award-textarea" placeholder="Description & Results (max. 150 words)"></textarea>
+                                </div>
+
+                                <!-- Award 4: Best Use of Technology -->
+                                <div class="award-field-block">
+                                    <label class="award-checkbox-row" for="award-technology">
+                                        <span class="award-checkbox-label">
+                                            <span class="custom-checkbox-wrapper">
+                                                <input type="checkbox" id="award-technology" name="awards[]" value="Best Use of Technology">
+                                                <span class="custom-checkbox-box"></span>
+                                            </span>
+                                            <span>Best Use of Technology</span>
+                                        </span>
+                                        <span class="award-row-square" aria-hidden="true"></span>
+                                    </label>
+                                    <textarea id="desc-technology" name="desc_technology" class="award-textarea" placeholder="Description & Results (max. 150 words)"></textarea>
+                                </div>
+
+                                <!-- Award 5: Best Online Campaign -->
+                                <div class="award-field-block">
+                                    <label class="award-checkbox-row" for="award-online">
+                                        <span class="award-checkbox-label">
+                                            <span class="custom-checkbox-wrapper">
+                                                <input type="checkbox" id="award-online" name="awards[]" value="Best Online Campaign">
+                                                <span class="custom-checkbox-box"></span>
+                                            </span>
+                                            <span>Best Online Campaign</span>
+                                        </span>
+                                        <span class="award-row-square" aria-hidden="true"></span>
+                                    </label>
+                                    <textarea id="desc-online" name="desc_online" class="award-textarea" placeholder="Description & Results (max. 150 words)"></textarea>
+                                </div>
+
+                                <!-- Submission Actions & Success Badge matching screen1.png -->
+                                <div class="form-actions-wrapper">
+                                    <button type="submit" class="btn-submit-form" id="btn-submit">
+                                        Submit Nomination
+                                    </button>
+
+                                    <!-- Exact visual representation of the white badge from screen1.png -->
+                                    <div class="submission-success-badge" id="success-badge">
+                                        <span class="success-check-icon" aria-hidden="true">&#10003;</span>
+                                        <span>Submission Successful</span>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

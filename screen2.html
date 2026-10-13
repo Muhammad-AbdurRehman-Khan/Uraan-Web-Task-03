@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Red Card 2018 - China Digital Football Awards. Recognising the most influential European football clubs, leagues, and players online in China.">
+    <title>Red Card 2018 - Screen 2: Awards & Report</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Specific screen2 standalone adjustments */
+        body {
+            background-color: #e5e7eb;
+        }
+        .screen-wrapper {
+            max-width: 480px; /* Matches screen2.png mobile long-scroll format by default */
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <nav class="global-nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="index.html" style="display:flex; align-items:center; gap:10px;">
+                    <img src="images/logo.png" alt="Red Card Logo" class="nav-logo">
+                    <div>
+                        <div class="nav-title">RED CARD 2018</div>
+                        <div class="nav-tagline">China Digital Football Awards</div>
+                    </div>
+                </a>
+            </div>
+            <div class="nav-screen-tabs">
+                <a href="screen1.html" class="nav-tab-btn">
+                    <span>📝 Screen 1: Submission Form</span>
+                </a>
+                <a href="screen2.html" class="nav-tab-btn active">
+                    <span>🏆 Screen 2: Awards & Report</span>
+                </a>
+            </div>
+            <div class="nav-view-mode">
+                <button type="button" id="toggle-frame-btn" class="view-toggle-btn">
+                    🖥️ Expand to Full Width
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Standalone Viewport for Screen 2 -->
+    <main class="app-viewport">
+        <div id="screen-wrapper" class="screen-wrapper">
+            <section id="screen-2-view" aria-label="Screen 2 - Red Card 2018 Report and Awards">
+                
+                <!-- Hero Section with Maroon Background & Slanted Corner -->
+                <header class="awards-hero-section">
+                    <div class="hero-header-top">
+                        <div class="hero-brand-logo-circle">
+                            <img src="images/logo.png" alt="Red Card Circular Logo">
+                        </div>
+                    </div>
+
+                    <h1 class="hero-main-title">RED CARD 2018</h1>
+                    <div class="hero-sub-title">China Digital Football Awards</div>
+
+                    <div class="hero-body-text">
+                        <p>
+                            The Red Card is globally recognised as the leading annual report to assesses the most influential European football clubs, leagues and players online in China. Now in its 7th year, Red Card 2018 has been reimagined to include 5 additional awards to recognise the many areas of digital performance in China, thereby taking the Red Card report to a whole new level. Due to the nature and variety of these new categories, the winners will be chosen by a panel of 6 industry experts, rather than by the traditional metrics used to assess the three headline awards.
+                        </p>
+                        <p>
+                            This report aims to educate teams and organisations on how to improve their China digital strategy, what today's Chinese fan wants and what works online in China.
+                        </p>
+                    </div>
+                </header>
+
+                <!-- Awards Body Section -->
+                <div class="awards-body-container">
+                    
+                    <!-- Display Mode Bar -->
+                    <div class="mode-switch-bar">
+                        <span class="mode-switch-title">Display Mode:</span>
+                        <div class="mode-toggle-group">
+                            <button type="button" id="btn-mockup-mode" class="mode-btn active" title="Displays 5x Dortmund BVB as shown in screen2.png mockup">
+                                Pixel-Perfect Mockup
+                            </button>
+                            <button type="button" id="btn-authentic-mode" class="mode-btn" title="Displays all provided clubs, leagues, and players">
+                                Full Nominees (BVB, Chelsea, PSG, Arsenal, EPL, CR7)
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Category 1: BEST CLUBS -->
+                    <section class="award-category-section" aria-labelledby="cat-1-title">
+                        <div class="category-heading-row">
+                            <img src="images/icon_awards.png" alt="Award category icon" class="category-triangle-icon">
+                            <h2 id="cat-1-title" class="category-title-text">BEST CLUBS</h2>
+                        </div>
+                        <div class="club-cards-grid">
+                            <div class="club-card-item">
+                                <div class="club-badge-wrapper">
+                                    <img src="images/1.png" alt="Borussia Dortmund">
+                                </div>
+                                <div class="club-name-primary">Lorem ipsum</div>
+                                <div class="club-name-secondary">Lorem</div>
+                            </div>
+                            <div class="club-card-item">
+                                <div class="club-badge-wrapper">
+                                    <img src="images/1.png" alt="Borussia Dortmund">
+                                </div>
+                                <div class="club-name-primary">Lorem ipsum</div>
+                                <div class="club-name-secondary">Lorem</div>
+                            </div>
+                            <div class="club-card-item">
+                                <div class="club-badge-wrapper">
+                                    <img src="images/1.png" alt="Borussia Dortmund">
+                                </div>
+                                <div class="club-name-primary">Lorem ipsum</div>
+                                <div class="club-name-secondary">Lorem</div>
+                            </div>
+                            <div class="club-card-item">
+                                <div class="club-badge-wrapper">
+                                    <img src="images/1.png" alt="Borussia Dortmund">
+                                </div>
+                                <div class="club-name-primary">Lorem ipsum</div>
+                                <div class="club-name-secondary">Lorem</div>
+                            </div>
+                            <div class="club-card-item">
+                                <div class="club-badge-wrapper">
+                                    <img src="images/1.png" alt="Borussia Dortmund">
+                                </div>
+                                <div class="club-name-primary">Lorem ipsum</div>
+                                <div class="club-name-secondary">Lorem</div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Category 2: BEST CLUBS -->
+                    <section class="award-category-section" aria-labelledby="cat-2-title">
+                        <div class="category-heading-row">
+                            <img src="images/icon_awards.png" alt="Award category icon" class="category-triangle-icon">
+                            <h2 id="cat-2-title" class="category-title-text">BEST CLUBS</h2>
+                        </div>
+                        <div class="club-cards-grid">
+                            <div class="club-card-item">
+                                <div class="club-badge-wrapper">
+                                    <img src="images/1.png" alt="Borussia Dortmund">
+                                </div>
+                                <div class="club-name-primary">Lorem ipsum</div>
+                                <div class="club-name-secondary">Lorem</div>
+                            </div>
+                            <div class="club-card-item">
+                                <div class="club-badge-wrapper">
+                                    <img src="images/1.png" alt="Borussia Dortmund">
+                                </div>
+                                <div class="club-name-primary">Lorem ipsum</div>
+                                <div class="club-name-secondary">Lorem</div>
+                            </div>
+                            <div class="club-card-item">
+                                <div class="club-badge-wrapper">
+                                    <img src="images/1.png" alt="Borussia Dortmund">
+                                </div>
+                                <div class="club-name-primary">Lorem ipsum</div>
+                                <div class="club-name-secondary">Lorem</div>
+                            </div>
+                            <div class="club-card-item">
+                                <div class="club-badge-wrapper">
+                                    <img src="images/1.png" alt="Borussia Dortmund">
+                                </div>
+                                <div class="club-name-primary">Lorem ipsum</div>
+                                <div class="club-name-secondary">Lorem</div>
+                            </div>
+                            <div class="club-card-item">
+                                <div class="club-badge-wrapper">
+                                    <img src="images/1.png" alt="Borussia Dortmund">
+                                </div>
+                                <div class="club-name-primary">Lorem ipsum</div>
+                                <div class="club-name-secondary">Lorem</div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Category 3: BEST CLUBS -->
+                    <section class="award-category-section" aria-labelledby="cat-3-title">
+                        <div class="category-heading-row">
+                            <img src="images/icon_awards.png" alt="Award category icon" class="category-triangle-icon">
+                            <h2 id="cat-3-title" class="category-title-text">BEST CLUBS</h2>
+                        </div>
+                        <div class="club-cards-grid">
+                            <div class="club-card-item">
+                                <div class="club-badge-wrapper">
+                                    <img src="images/1.png" alt="Borussia Dortmund">
+                                </div>
+                                <div class="club-name-primary">Lorem ipsum</div>
+                                <div class="club-name-secondary">Lorem</div>
+                            </div>
+                            <div class="club-card-item">
+                                <div class="club-badge-wrapper">
+                                    <img src="images/1.png" alt="Borussia Dortmund">
+                                </div>
+                                <div class="club-name-primary">Lorem ipsum</div>
+                                <div class="club-name-secondary">Lorem</div>
+                            </div>
+                            <div class="club-card-item">
+                                <div class="club-badge-wrapper">
+                                    <img src="images/1.png" alt="Borussia Dortmund">
+                                </div>
+                                <div class="club-name-primary">Lorem ipsum</div>
+                                <div class="club-name-secondary">Lorem</div>
+                            </div>
+                            <div class="club-card-item">
+                                <div class="club-badge-wrapper">
+                                    <img src="images/1.png" alt="Borussia Dortmund">
+                                </div>
+                                <div class="club-name-primary">Lorem ipsum</div>
+                                <div class="club-name-secondary">Lorem</div>
+                            </div>
+                            <div class="club-card-item">
+                                <div class="club-badge-wrapper">
+                                    <img src="images/1.png" alt="Borussia Dortmund">
+                                </div>
+                                <div class="club-name-primary">Lorem ipsum</div>
+                                <div class="club-name-secondary">Lorem</div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Category 4: BEST CLUBS -->
+                    <section class="award-category-section" aria-labelledby="cat-4-title">
+                        <div class="category-heading-row">
+                            <img src="images/icon_awards.png" alt="Award category icon" class="category-triangle-icon">
+                            <h2 id="cat-4-title" class="category-title-text">BEST CLUBS</h2>
+                        </div>
+                        <div class="club-cards-grid">
+                            <div class="club-card-item">
+                                <div class="club-badge-wrapper">
+                                    <img src="images/1.png" alt="Borussia Dortmund">
+                                </div>
+                                <div class="club-name-primary">Lorem ipsum</div>
+                                <div class="club-name-secondary">Lorem</div>
+                            </div>
+                            <div class="club-card-item">
+                                <div class="club-badge-wrapper">
+                                    <img src="images/1.png" alt="Borussia Dortmund">
+                                </div>
+                                <div class="club-name-primary">Lorem ipsum</div>
+                                <div class="club-name-secondary">Lorem</div>
+                            </div>
+                            <div class="club-card-item">
+                                <div class="club-badge-wrapper">
+                                    <img src="images/1.png" alt="Borussia Dortmund">
+                                </div>
+                                <div class="club-name-primary">Lorem ipsum</div>
+                                <div class="club-name-secondary">Lorem</div>
+                            </div>
+                            <div class="club-card-item">
+                                <div class="club-badge-wrapper">
+                                    <img src="images/1.png" alt="Borussia Dortmund">
+                                </div>
+                                <div class="club-name-primary">Lorem ipsum</div>
+                                <div class="club-name-secondary">Lorem</div>
+                            </div>
+                            <div class="club-card-item">
+                                <div class="club-badge-wrapper">
+                                    <img src="images/1.png" alt="Borussia Dortmund">
+                                </div>
+                                <div class="club-name-primary">Lorem ipsum</div>
+                                <div class="club-name-secondary">Lorem</div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Category 5: BEST CLUBS -->
+                    <section class="award-category-section" aria-labelledby="cat-5-title">
+                        <div class="category-heading-row">
+                            <img src="images/icon_awards.png" alt="Award category icon" class="category-triangle-icon">
+                            <h2 id="cat-5-title" class="category-title-text">BEST CLUBS</h2>
+                        </div>
+                        <div class="club-cards-grid">
+                            <div class="club-card-item">
+                                <div class="club-badge-wrapper">
+                                    <img src="images/1.png" alt="Borussia Dortmund">
+                                </div>
+                                <div class="club-name-primary">Lorem ipsum</div>
+                                <div class="club-name-secondary">Lorem</div>
+                            </div>
+                            <div class="club-card-item">
+                                <div class="club-badge-wrapper">
+                                    <img src="images/1.png" alt="Borussia Dortmund">
+                                </div>
+                                <div class="club-name-primary">Lorem ipsum</div>
+                                <div class="club-name-secondary">Lorem</div>
+                            </div>
+                            <div class="club-card-item">
+                                <div class="club-badge-wrapper">
+                                    <img src="images/1.png" alt="Borussia Dortmund">
+                                </div>
+                                <div class="club-name-primary">Lorem ipsum</div>
+                                <div class="club-name-secondary">Lorem</div>
+                            </div>
+                            <div class="club-card-item">
+                                <div class="club-badge-wrapper">
+                                    <img src="images/1.png" alt="Borussia Dortmund">
+                                </div>
+                                <div class="club-name-primary">Lorem ipsum</div>
+                                <div class="club-name-secondary">Lorem</div>
+                            </div>
+                            <div class="club-card-item">
+                                <div class="club-badge-wrapper">
+                                    <img src="images/1.png" alt="Borussia Dortmund">
+                                </div>
+                                <div class="club-name-primary">Lorem ipsum</div>
+                                <div class="club-name-secondary">Lorem</div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+
+                <!-- Launch Announcement Maroon Banner -->
+                <div class="launch-announcement-banner">
+                    <div class="launch-announcement-text">
+                        RED CARD 2019 WINNERS<br>
+                        AND REPORT TO BE LAUNCHED<br>
+                        ON 24TH JANUARY 2019.
+                    </div>
+                </div>
+
+                <!-- Skyline Footer Graphic Section -->
+                <footer class="skyline-footer-section">
+                    <div class="footer-overlay-content">
+                        <span>&copy; 2018 Red Card by Mailman Group. All Rights Reserved.</span>
+                        <span>China Digital Football Awards</span>
+                    </div>
+                </footer>
+
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        // Set toggle button to expand/contract for screen2
+        const frameBtn = document.getElementById('toggle-frame-btn');
+        const wrapper = document.getElementById('screen-wrapper');
+        let expanded = false;
+        if (frameBtn && wrapper) {
+            frameBtn.addEventListener('click', () => {
+                expanded = !expanded;
+                wrapper.style.maxWidth = expanded ? '980px' : '480px';
+                frameBtn.textContent = expanded ? '📱 Mobile Frame (480px)' : '🖥️ Expand to Full Width';
+            });
+        }
+    </script>
+</body>
+</html>
